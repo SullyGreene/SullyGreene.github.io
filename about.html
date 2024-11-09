@@ -3,65 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Sully Greene</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Font Awesome for Social Icons -->
+    <title>About Me - Sully Greene</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .icon-container {
+            font-size: 2rem;
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+        .icon-container:hover {
+            transform: scale(1.2);
+        }
+        .card-effect {
+            transition: box-shadow 0.3s;
+        }
+        .card-effect:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">Sully Greene</a>
+    <header class="bg-dark text-white p-3 mb-4">
+        <div class="container d-flex align-items-center">
+            <div class="icon-container">
+                <i class="fas fa-robot"></i>
             </div>
-            <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="https://x.com/SullyGreene" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://huggingface.co/SullyGreene" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face"><i class="fab fa-hugging-face"></i></a>
-                <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://pypi.org/user/SullyGreene" target="_blank" rel="noopener noreferrer" aria-label="PyPI"><i class="fab fa-python"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
-        </nav>
+            <h1 class="h3 mb-0">Sully Greene - AI Developer & Tech Enthusiast</h1>
+        </div>
     </header>
-    <main>
-        <section class="about">
-            <h1>About Me</h1>
-            <p>Hi, I'm Sully Greene, a passionate AI developer and tech enthusiast with nearly three decades of experience. My journey in technology began at the age of three, with my first computer being a Windows 95. Since then, I've grown deeply connected to computers, programming, and the ever-evolving world of tech.</p>
-            <p>At the age of 12, I ventured into the world of Linux, starting with Ubuntu and later exploring other flavors. Currently, Arch Linux is my daily driver for its customization capabilities, though I still enjoy using Windows 11 on my laptop for its intuitive interface. I've always had an innate curiosity for learning and solving challenges, which has driven my passion for AI and open-source projects.</p>
-            <h2>Skills</h2>
-            <ul>
-                <li>Machine Learning & Deep Learning</li>
-                <li>Natural Language Processing (NLP)</li>
-                <li>Data Analysis & Visualization</li>
-                <li>Python, JavaScript, Streamlit, Flask</li>
-                <li>Linux System Administration</li>
+
+    <main class="container">
+        <section class="card-effect card p-4 mb-5">
+            <h2 class="text-center">👋 About Me</h2>
+            <p>Hi, I'm <strong>Sully Greene</strong>—a passionate 🤖 AI developer and tech enthusiast with nearly three decades of experience. My journey in technology began at the age of three with my first 🖥️ computer running <strong>Windows 95</strong>. Since then, I've been deeply connected to computers, programming, and the ever-evolving tech landscape. 💻</p>
+            <p>At 12, I ventured into the world of <strong>Linux</strong> 🐧, starting with <strong>Ubuntu</strong> and eventually exploring other distributions. Currently, <strong>Arch Linux</strong> is my daily driver, valued for its customization capabilities, while I still enjoy <strong>Windows 11</strong> on my laptop for its intuitive, console-like interface 🎮. My innate curiosity and drive to solve challenges have been the foundation of my passion for AI and open-source projects. 🚀</p>
+        </section>
+
+        <section class="card-effect card p-4 mb-5">
+            <h2 class="text-center">💪 Skills</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">🤖 Machine Learning & Deep Learning</li>
+                <li class="list-group-item">🗣️ Natural Language Processing (NLP)</li>
+                <li class="list-group-item">📊 Data Analysis & Visualization</li>
+                <li class="list-group-item">🐍 Python, 💻 JavaScript, 🚀 Streamlit, 🧩 Flask</li>
+                <li class="list-group-item">🐧 Linux System Administration</li>
             </ul>
-            <h2>Tech Stack</h2>
-            <div class="tech-icons">
-                <!-- Add icons or logos of technologies you use -->
-                <i class="fab fa-python" aria-label="Python"></i>
-                <i class="fab fa-js" aria-label="JavaScript"></i>
-                <i class="fab fa-node" aria-label="Node.js"></i>
-                <i class="fab fa-linux" aria-label="Linux"></i>
-                <!-- Add more as needed -->
-            </div>
-            <h2>Development Philosophy</h2>
-            <p>I believe in keeping things simple, modular, and extendable. My development philosophy centers around writing reusable code and providing clear documentation to ensure that others can easily understand, use, and extend my work. I also share my projects and development process openly on GitHub and Hugging Face, contributing to the open-source community and supporting the growth of collaborative AI development.</p>
+        </section>
+
+        <section class="card-effect card p-4 mb-5">
+            <h2 class="text-center">🌐 Tech Stack</h2>
+            <p>🐍 <strong>Python</strong> is my go-to language, and I’m a strong advocate of frameworks like <strong>Streamlit</strong> and <strong>Flask</strong> for their seamless integration with data and visual tools 📊. These tools allow me to bring ideas to life with both functionality and aesthetics, making them perfect for my projects in data visualization, prototyping, and AI. 🧠✨</p>
+        </section>
+
+        <section class="card-effect card p-4 mb-5">
+            <h2 class="text-center">💡 Development Philosophy</h2>
+            <p>I believe in keeping things <strong>simple, modular, and extendable</strong> 🛠️. My development philosophy is to write reusable code and provide clear documentation, making it easy for others to understand, use, and expand upon my work. 📄 I openly share my projects and development process on <strong>GitHub</strong> 🐱 and <strong>Hugging Face</strong> 🤗, supporting open-source growth and fostering a collaborative AI community. 🌍🤝</p>
+        </section>
+
+        <section class="card-effect card p-4 mb-5">
+            <h2 class="text-center">🤖 AI, Agents, and Future Visions</h2>
+            <p>I've been an enthusiastic supporter of <strong>OpenAI</strong> 🧠 since the early days, joining as a beta tester and one of the first Plus subscribers. 💡 I strongly believe in AI’s potential, especially in <strong>Large Language Models (LLMs)</strong> and agents, which I see as key to the future. 🔑 Recently, I organized my codebase into three core projects, with <strong>TinyAGI</strong> as my flagship package. <strong>TinyAGI</strong> consolidates foundational code across projects, reducing redundancy and setting the stage for increased efficiency as I continue refining my tools. ⚙️💡</p>
+        </section>
+
+        <section class="card-effect card p-4 mb-5">
+            <h2 class="text-center">🎉 Open Source Contributions & Custom Datasets</h2>
+            <p>I'm committed to open source and frequently share my work on <strong>Hugging Face</strong> 🤗. Lately, I’ve been focused on creating and customizing my own AI datasets 📚, especially reformatting <strong>Alpaca-style</strong> datasets for unique use cases. Creating my first <strong>PyPI</strong> 🐍 package was a significant milestone, enabling easy sharing and porting of my work across environments. 🌐✨</p>
+        </section>
+
+        <section class="card-effect card p-4 mb-5">
+            <h2 class="text-center">📜 Documentation and Community</h2>
+            <p>I document every step of my journey on <strong>GitHub</strong> 🐱—not only to showcase my projects but also to provide a resource for others. My approach centers around accessibility and transparency, guided by the principle of <strong>“just read the manual”</strong> 📖. I believe that with clear documentation, any application becomes more adaptable, accessible, and ready for growth. 🌱</p>
+        </section>
+
+        <section class="text-center card-effect card p-4 mb-5">
+            <h2>🚀 Let's Innovate Together!</h2>
+            <p>Thank you for stopping by, and feel free to explore my work. Let’s build and innovate together! 🚀</p>
         </section>
     </main>
-    <footer>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="d-flex justify-content-center mb-3">
+            <a href="https://github.com/SullyGreene" target="_blank" class="text-white me-3 icon-container"><i class="fab fa-github"></i></a>
+            <a href="https://huggingface.co/SullyGreene" target="_blank" class="text-white me-3 icon-container"><i class="fab fa-hugging-face"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-white icon-container"><i class="fab fa-linkedin"></i></a>
+        </div>
         <p>&copy; 2024 Sully Greene. All rights reserved.</p>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

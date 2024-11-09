@@ -3,117 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sully Greene - AI Developer</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Font Awesome for Social Icons -->
+    <title>Sully Greene - AI Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .nav-links {
-            transition: max-height 0.3s ease-in-out;
-            overflow: hidden;
-            max-height: 0;
+        .hero-section {
+            background: #343a40;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
         }
-        .nav-links.open {
-            max-height: 300px;
+        .hero-section h1 {
+            font-size: 3rem;
+        }
+        .icon-container {
+            font-size: 2rem;
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+        .icon-container:hover {
+            transform: scale(1.2);
+        }
+        .card-effect {
+            transition: box-shadow 0.3s;
+        }
+        .card-effect:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">Sully Greene</a>
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex align-items-center">
+            <div class="icon-container">
+                <i class="fas fa-robot"></i>
             </div>
-            <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="https://x.com/SullyGreene" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://huggingface.co/SullyGreene" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face"><i class="fab fa-hugging-face"></i></a>
-                <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://pypi.org/user/SullyGreene" target="_blank" rel="noopener noreferrer" aria-label="PyPI"><i class="fab fa-python"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <button id="theme-toggle" aria-label="Toggle theme">🌜</button>
-        </nav>
+            <h1 class="h3 mb-0">Sully Greene - AI Developer & Tech Enthusiast</h1>
+        </div>
     </header>
-    <main>
-        <section class="intro">
-            <div class="intro-container">
-                <h1 class="typeout-effect" style="text-align: center;">Sully Greene<br>AI Developer & Tech Enthusiast</h1>
-                <div class="intro-body">
-                    <p>Hello! I'm Sully Greene, a passionate AI developer and open-source advocate. My journey in tech began young, I got my first computer, a Windows 95, at age three, and ever since, I’ve been deeply immersed in the world of computers and programming.</p>
-                    <p>With nearly three decades of experience using Windows, I’ve also been a Linux aficionado since age 12. I began with Ubuntu, exploring its various flavors, and today, Arch Linux is my daily driver on PC. However, I still hold a soft spot for Windows 11 on my laptop; its UI feels as intuitive as an advanced console.</p>
-                    <h3 style="text-align: center;">AI, Agents, and Future Visions</h3>
-                    <p>I’ve been an enthusiastic supporter of OpenAI, joining as one of the early beta testers and among the first to sign up for Plus. I’m a strong believer in the future of AI, especially in the transformative potential of Large Language Models (LLMs) and agents. Recently, I channeled this passion into reorganizing my codebase into three core projects to streamline my work. Among these, TinyAGI has been my flagship package, It consolidates foundational code for all my projects, shaving off thousands of redundant lines and setting the stage for future efficiency as I refine my tools.</p>
-                    <h3 style="text-align: center;">Tech Stack: Python, Streamlit, Flask, and Beyond</h3>
-                    <p>Python is my language of choice, and I’m a huge fan of frameworks like Streamlit and Flask for their seamless integration. These tools allow me to bring my ideas to life in a way that's both functional and visually engaging, making them perfect for my projects in data visualization and AI prototyping.</p>
-                    <h3 style="text-align: center;">Open Source Contributions & Custom Datasets</h3>
-                    <p>I'm committed to the open-source community and frequently share my work on Hugging Face. Recently, I’ve been focused on creating and reformatting my own AI datasets, particularly adapting Alpaca-style datasets to better fit my unique use cases. Building my own PyPI package was another milestone, enabling me to easily share and port my projects across various environments.</p>
-                    <h3 style="text-align: center;">Development Philosophy</h3>
-                    <p>I document every step of my process on GitHub, not only to showcase my projects but to create an accessible guide for others. My approach centers around simplicity, modularity, and reusability keeping things simple, modular, and extendable is key. I firmly believe in the “just read the manual” philosophy: with clear documentation, any application becomes more accessible, flexible, and capable of scaling.</p>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to My AI Portfolio</h1>
+            <p>Discover my journey in AI, my projects, and my passion for technology and open source.</p>
+        </div>
+    </section>
+
+    <main class="container mt-5">
+        <section class="mb-5">
+            <h2 class="text-center mb-4">🛠️ Key Highlights</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-effect card p-3 mb-4">
+                        <h3 class="text-center">👋 About Me</h3>
+                        <p>Learn about my journey into technology and my passion for AI, Linux, and open source.</p>
+                        <a href="about.html" class="btn btn-primary d-block">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-effect card p-3 mb-4">
+                        <h3 class="text-center">💪 Skills</h3>
+                        <p>Explore my technical skills, including Machine Learning, NLP, and System Administration.</p>
+                        <a href="about.html#skills" class="btn btn-primary d-block">Explore Skills</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-effect card p-3 mb-4">
+                        <h3 class="text-center">🤖 Projects</h3>
+                        <p>Check out my AI projects, including TinyAGI, custom datasets, and more.</p>
+                        <a href="projects.html" class="btn btn-primary d-block">View Projects</a>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="featured-projects">
-            <h2 style="text-align: center;">Featured Projects</h2>
-            <div id="featured-projects-container">
-                <!-- Dynamic Project Cards Will Appear Here -->
-                <div class="project-card">
-                    <h3 style="text-align: center;">TinyAGI Overview</h3>
-                    <p>TinyAGI is a modular, adaptable framework designed for managing AI agents, plugins, and tools in a cohesive and scalable way. With its extensible architecture, TinyAGI allows dynamic loading of components, whether from local sources or directly from GitHub, empowering developers to customize and scale applications across a variety of use cases.</p>
-                    <a href="https://pypi.org/project/TinyAGI/" target="_blank" rel="noopener noreferrer">Learn More</a>
+
+        <section class="mb-5">
+            <h2 class="text-center mb-4">🚀 Featured Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-effect card p-4 mb-4">
+                        <h3>TinyAGI</h3>
+                        <p>TinyAGI is a modular framework designed to manage AI agents, plugins, and tools cohesively. It's the foundation of my AI development work.</p>
+                        <a href="https://pypi.org/project/TinyAGI/" target="_blank" class="btn btn-outline-primary">Learn More</a>
+                    </div>
                 </div>
-                <div class="project-card"> 
-                    <h3 style="text-align: center;">TinyAGI-Hub Streamlit Overview</h3>
-                    <p>TinyAGI-Hub Streamlit is an intuitive multi-page application built with Streamlit to simplify the management and configuration of TinyAGI components. With a clean interface, it enables users to effortlessly explore, configure, and execute tasks involving TinyAGI’s agents, plugins, tools, and services. Designed as part of the TinyAGI ecosystem, this hub app provides everything needed for seamless interaction and setup.</p>
-                    <a href="https://github.com/SullyGreene/TinyAGI-Hub-Streamlit/" target="_blank" rel="noopener noreferrer">Learn More</a>
+                <div class="col-md-6">
+                    <div class="card-effect card p-4 mb-4">
+                        <h3>TinyAGI-Hub Streamlit</h3>
+                        <p>An intuitive multi-page Streamlit application that helps manage and configure TinyAGI components seamlessly.</p>
+                        <a href="https://github.com/SullyGreene/TinyAGI-Hub-Streamlit/" target="_blank" class="btn btn-outline-primary">Learn More</a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3 style="text-align: center;">AlpacaX Overview</h3>
-                    <p>The AlpacaX dataset is crafted to enhance AI model capabilities by providing structured, context-rich, and logically sequenced examples. Tailored for integration with TinyAGI, AlpacaX leverages an advanced Alpaca-style training methodology to train models for detailed instruction-following and multi-step reasoning. This dataset is ideal for fine-tuning language models to handle complex, multi-layered tasks with clarity and organization.</p>
-                    <a href="https://github.com/SullyGreene/TinyAGI-Hub-Streamlit/" target="_blank" rel="noopener noreferrer">Learn More</a>
-                </div>
+            </div>
+        </section>
+
+        <section class="text-center mb-5">
+            <h2>🎉 Let's Connect</h2>
+            <p>Feel free to reach out, explore my open-source projects, or collaborate with me!</p>
+            <div class="d-flex justify-content-center">
+                <a href="https://github.com/SullyGreene" target="_blank" class="text-dark me-3 icon-container"><i class="fab fa-github"></i></a>
+                <a href="https://huggingface.co/SullyGreene" target="_blank" class="text-dark me-3 icon-container"><i class="fab fa-hugging-face"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-dark icon-container"><i class="fab fa-linkedin"></i></a>
             </div>
         </section>
     </main>
-    <footer>
+
+    <footer class="bg-dark text-white text-center p-3">
         <p>&copy; 2024 Sully Greene. All rights reserved.</p>
     </footer>
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
 
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme) {
-            document.body.classList.add(currentTheme);
-            themeToggle.textContent = currentTheme === 'dark-theme' ? '☀️' : '🌜';
-        }
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-theme');
-            const theme = document.body.classList.contains('dark-theme') ? 'dark-theme' : 'light-theme';
-            localStorage.setItem('theme', theme);
-            themeToggle.textContent = theme === 'dark-theme' ? '☀️' : '🌜';
-        });
-
-        function debounce(func, wait) {
-            let timeout;
-            return function(...args) {
-                clearTimeout(timeout);
-                timeout = setTimeout(() => func.apply(this, args), wait);
-            };
-        }
-
-        menuToggle.addEventListener('click', debounce(() => {
-            navLinks.classList.toggle('open');
-        }, 200));
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
