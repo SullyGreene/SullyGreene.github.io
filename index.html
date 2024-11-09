@@ -7,6 +7,123 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: var(--header-bg);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo a {
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+        .nav-links li a:hover {
+            color: var(--link-hover);
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons a {
+            color: var(--text-color);
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        #theme-toggle {
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            transition: transform 0.3s;
+        }
+        #theme-toggle:hover {
+            transform: rotate(20deg);
+        }
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .intro h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .intro p {
+            font-size: 1.2em;
+        }
+        .featured-projects {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        #featured-projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project-card {
+            width: calc(100% - 40px);
+            max-width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--header-bg);
+            color: var(--text-color);
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: var(--header-bg);
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,15 +138,15 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="social-icons">
-                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://huggingface.co/yourusername" target="_blank"><i class="fab fa-hugging-face"></i></a>
+                <a href="https://x.com/SullyGreene" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://huggingface.co/SullyGreene" target="_blank"><i class="fab fa-hugging-face"></i></a>
                 <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://pypi.org/user/yourusername" target="_blank"><i class="fab fa-python"></i></a>
+                <a href="https://pypi.org/user/SullyGreene" target="_blank"><i class="fab fa-python"></i></a>
                 <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
-            <button id="theme-toggle">🌓</button>
+            <button id="theme-toggle">🌜</button>
         </nav>
     </header>
     <main>
@@ -41,12 +158,21 @@
             <h2>Featured Projects</h2>
             <div id="featured-projects-container">
                 <!-- Dynamic Project Cards Will Appear Here -->
+                <div class="project-card">Project 1</div>
+                <div class="project-card">Project 2</div>
+                <div class="project-card">Project 3</div>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Sully Greene. All rights reserved.</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            themeToggle.textContent = document.body.classList.contains('dark-theme') ? '☀️' : '🌜';
+        });
+    </script>
 </body>
 </html>
