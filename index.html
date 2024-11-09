@@ -7,163 +7,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: var(--background);
-            color: var(--text-color);
-            transition: all 0.3s ease;
-        }
-        header nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: var(--header-bg);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .logo a {
-            text-decoration: none;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: var(--text-color);
-        }
-        .nav-links {
-            display: flex;
-            gap: 15px;
-            list-style: none;
-        }
-        .nav-links li a {
-            text-decoration: none;
-            color: var(--text-color);
-            transition: color 0.3s;
-        }
-        .nav-links li a:hover {
-            color: var(--link-hover);
-        }
-        .social-icons {
-            display: flex;
-            gap: 10px;
-        }
-        .social-icons a {
-            color: var(--text-color);
-            transition: transform 0.3s;
-        }
-        .social-icons a:hover {
-            transform: scale(1.2);
-        }
-        #theme-toggle {
-            cursor: pointer;
-            background: none;
-            border: none;
-            font-size: 1.5em;
-            transition: color 0.3s, box-shadow 0.3s;
-        }
-        #theme-toggle:hover {
-            color: var(--link-hover);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        .intro {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .intro-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: var(--container-bg);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .intro h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .intro p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            text-align: left;
-        }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        @keyframes blink {
-            0% { border-right-color: transparent; }
-            50% { border-right-color: var(--text-color); }
-            100% { border-right-color: transparent; }
-        }
-        .typeout-effect {
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 3px solid var(--text-color);
-            width: 0;
-            animation: typing 2.5s steps(40, end), blink 0.75s step-end infinite;
-        }
-        .featured-projects {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        #featured-projects-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .project-card {
-            width: calc(100% - 40px);
-            max-width: 300px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: var(--header-bg);
-            color: var(--text-color);
-        }
-        @media (max-width: 768px) {
-            header nav {
-                flex-direction: column;
-            }
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background-color: var(--header-bg);
-                width: 100%;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            }
-            .nav-links.open {
-                display: flex;
-            }
-            .menu-toggle {
-                display: block;
-                cursor: pointer;
-            }
-        }
-        @media (max-width: 480px) {
-            .nav-links {
-                gap: 10px;
-                padding: 10px;
-            }
-            .social-icons {
-                justify-content: center;
-                margin-top: 10px;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -196,13 +39,13 @@
                 <div class="intro-body">
                     <p>Hello! I'm Sully Greene, a passionate AI developer and open-source advocate. My journey in tech began young, I got my first computer, a Windows 95, at age three, and ever since, I’ve been deeply immersed in the world of computers and programming.</p>
                     <p>With nearly three decades of experience using Windows, I’ve also been a Linux aficionado since age 12. I began with Ubuntu, exploring its various flavors, and today, Arch Linux is my daily driver on PC. However, I still hold a soft spot for Windows 11 on my laptop; its UI feels as intuitive as an advanced console.</p>
-                    <h3>🤔 AI, Agents, and Future Visions</h3>
+                    <h3>AI, Agents, and Future Visions</h3>
                     <p>I’ve been an enthusiastic supporter of OpenAI, joining as one of the early beta testers and among the first to sign up for Plus. I’m a strong believer in the future of AI, especially in the transformative potential of Large Language Models (LLMs) and agents. Recently, I channeled this passion into reorganizing my codebase into three core projects to streamline my work. Among these, TinyAGI has been my flagship package, It consolidates foundational code for all my projects, shaving off thousands of redundant lines and setting the stage for future efficiency as I refine my tools.</p>
-                    <h3>⚙️ Tech Stack: Python, Streamlit, Flask, and Beyond</h3>
+                    <h3>Tech Stack: Python, Streamlit, Flask, and Beyond</h3>
                     <p>Python is my language of choice, and I’m a huge fan of frameworks like Streamlit and Flask for their seamless integration. These tools allow me to bring my ideas to life in a way that's both functional and visually engaging, making them perfect for my projects in data visualization and AI prototyping.</p>
-                    <h3>📚 Open Source Contributions & Custom Datasets</h3>
+                    <h3>Open Source Contributions & Custom Datasets</h3>
                     <p>I'm committed to the open-source community and frequently share my work on Hugging Face. Recently, I’ve been focused on creating and reformatting my own AI datasets, particularly adapting Alpaca-style datasets to better fit my unique use cases. Building my own PyPI package was another milestone, enabling me to easily share and port my projects across various environments.</p>
-                    <h3>🛠️ Development Philosophy</h3>
+                    <h3>Development Philosophy</h3>
                     <p>I document every step of my process on GitHub, not only to showcase my projects but to create an accessible guide for others. My approach centers around simplicity, modularity, and reusability keeping things simple, modular, and extendable is key. I firmly believe in the “just read the manual” philosophy: with clear documentation, any application becomes more accessible, flexible, and capable of scaling.</p>
                 </div>
             </div>
@@ -212,19 +55,16 @@
             <div id="featured-projects-container">
                 <!-- Dynamic Project Cards Will Appear Here -->
                 <div class="project-card">
-                    <!-- <img src="https://raw.githubusercontent.com/SullyGreene/TinyAGI/refs/heads/main/Static/logo.png" alt="TinyAGI Logo"> -->
                     <h3>TinyAGI Overview</h3>
                     <p>TinyAGI is a modular, adaptable framework designed for managing AI agents, plugins, and tools in a cohesive and scalable way. With its extensible architecture, TinyAGI allows dynamic loading of components, whether from local sources or directly from GitHub, empowering developers to customize and scale applications across a variety of use cases.</p>
                     <a href="https://pypi.org/project/TinyAGI/" target="_blank">Learn More</a>
                 </div>
-                <div class="project-card">
-                    <!-- <img src="https://raw.githubusercontent.com/SullyGreene/TinyAGI/refs/heads/main/Static/logo.png" alt="TinyAGI Logo"> -->
+                <div class="project-card"> 
                     <h3>TinyAGI-Hub Streamlit Overview</h3>
                     <p>TinyAGI-Hub Streamlit is an intuitive multi-page application built with Streamlit to simplify the management and configuration of TinyAGI components. With a clean interface, it enables users to effortlessly explore, configure, and execute tasks involving TinyAGI’s agents, plugins, tools, and services. Designed as part of the TinyAGI ecosystem, this hub app provides everything needed for seamless interaction and setup.</p>
                     <a href="https://github.com/SullyGreene/TinyAGI-Hub-Streamlit/" target="_blank">Learn More</a>
                 </div>
                 <div class="project-card">
-                    <!-- <img src="https://raw.githubusercontent.com/SullyGreene/TinyAGI/refs/heads/main/Static/logo.png" alt="TinyAGI Logo"> -->
                     <h3>AlpacaX Overview</h3>
                     <p>The AlpacaX dataset is crafted to enhance AI model capabilities by providing structured, context-rich, and logically sequenced examples. Tailored for integration with TinyAGI, AlpacaX leverages an advanced Alpaca-style training methodology to train models for detailed instruction-following and multi-step reasoning. This dataset is ideal for fine-tuning language models to handle complex, multi-layered tasks with clarity and organization.</p>
                     <a href="https://github.com/SullyGreene/TinyAGI-Hub-Streamlit/" target="_blank">Learn More</a>
