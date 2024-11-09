@@ -3,195 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sully Greene - AI Portfolio</title>
+    <title>Sully Greene - About</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Marked.js for Markdown Parsing -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <style>
-        /* Custom Styles */
-        body {
-            padding-top: calc(var(--bs-navbar-height, 56px) + 10px); /* Dynamic padding for fixed navbar */
-        }
-        .icon-container {
-            font-size: 2rem;
-            margin-right: 10px;
-            transition: transform 0.3s;
-        }
-        .icon-container:hover {
-            transform: scale(1.2);
-        }
-        .card-effect {
-            transition: box-shadow 0.3s;
-        }
-        .card-effect:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .hero-section {
-            background: #343a40;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        .hero-section h1 {
-            font-size: 3rem;
-        }
-        /* Theme Toggle */
-        body.dark-mode {
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        .dark-mode .bg-dark {
-            background-color: #1f1f1f !important;
-        }
-        .dark-mode .card {
-            background-color: #1e1e1e;
-            color: #e0e0e0;
-        }
-        /* Navigation Styles */
-        .navbar-brand {
-            display: flex;
-            align-items: center;
-        }
-        .navbar-brand .icon-container {
-            margin-right: 10px;
-        }
-        /* Responsive Menu Toggle */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .nav-links li {
-                text-align: center;
-                padding: 10px 0;
-            }
-        }
-    </style>
+    <!-- AOS CSS for Animations -->
+    <link href="vendors/aos/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Navigation (Same as index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#home">
-                <div class="icon-container">
-                    <i class="fas fa-robot"></i>
-                </div>
-                Sully Greene
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-robot me-2"></i>
+                Sully Greene's Portfolio
             </a>
-            <button class="navbar-toggler" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarNav" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto nav-links">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link active" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center ms-3">
-                    <button id="theme-toggle" class="btn btn-outline-light" aria-label="Toggle theme">🌓</button>
-                </div>
+                <button id="theme-toggle" class="btn btn-outline-light ms-3" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content Area -->
-    <main class="container mt-4" id="content">
-        <!-- Content will be loaded here dynamically -->
-    </main>
+
+<!-- Hero Section -->
+<section id="home-hero" class="hero-section text-center text-white d-flex align-items-center" style="min-height: 100vh; background-image: url('assets/images/hero-bg.jpg'); background-size: cover; background-position: center;">
+    <div class="container" data-aos="fade-up">
+        <img src="assets/images/profile-picture.jpg" alt="Sully Greene Profile Picture" class="rounded-circle mb-4" style="width: 250px; height: 250px; object-fit: cover;">
+        <h1 class="display-4">👋 Hello I'm Sully</h1>
+        <h2 class="display-4">Welcome to My Dev Portfolio</h2>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons mt-4">
+            <a href="https://x.com/SullyGreene" target="_blank" aria-label="X.com">
+                <img src="https://img.shields.io/twitter/follow/SullyGreene?style=social" alt="Twitter Follow">
+            </a>
+            <a href="https://huggingface.co/SullyGreene" target="_blank" aria-label="Hugging Face">
+                <img src="https://img.shields.io/badge/Hugging%20Face-Profile-yellow" alt="Hugging Face">
+            </a>
+            <a href="https://instagram.com/SullyGreene.ig" target="_blank" aria-label="Instagram">
+                <img src="https://img.shields.io/badge/Instagram-Follow-red?style=social&logo=instagram" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com/in/SullyGreene" target="_blank" aria-label="LinkedIn">
+                <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin" alt="LinkedIn">
+            </a>
+            <a href="https://youtube.com/@SullyGreene" target="_blank" aria-label="YouTube">
+                <img src="https://img.shields.io/youtube/channel/subscribers/SullyGreene?style=social" alt="YouTube Subscribe">
+            </a>
+            <a href="https://pypi.org/user/SullyGreene" target="_blank" aria-label="PyPI">
+                <img src="https://img.shields.io/badge/PyPI-Profile-orange?style=social&logo=pypi" alt="PyPI">
+            </a>
+        </div>
+        <p class="lead">Discover my journey in AI, my projects, my passion for technology and open source.</p>
+        <a href="projects.html" class="btn btn-primary btn-lg mt-3"><i class="fas fa-rocket me-2"></i>View Projects</a>
+    </div>
+</section>
+
+<!-- Make sure to include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-3 mt-5">
-        <div class="d-flex justify-content-center mb-3">
-            <a href="https://github.com/SullyGreene" target="_blank" class="text-white me-3 icon-container" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://huggingface.co/SullyGreene" target="_blank" class="text-white me-3 icon-container" aria-label="Hugging Face"><i class="fab fa-hugging-face"></i></a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-white icon-container" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <footer class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <a href="https://github.com/SullyGreene" target="_blank" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://linkedin.com/in/SullyGreene" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2024 Sully Greene. All rights reserved.</p>
         </div>
-        <p>&copy; 2024 Sully Greene. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom Script for Dynamic Content Loading -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const content = document.getElementById('content');
-            const themeToggle = document.getElementById('theme-toggle');
-
-            // Function to load Markdown content
-            const loadContent = async (page) => {
-                try {
-                    const response = await fetch(`markdown/${page}.md`);
-                    if (!response.ok) throw new Error('Network response was not ok');
-                    const text = await response.text();
-                    content.innerHTML = marked.parse(text);
-                    // After loading markdown, you might need to reinitialize any Bootstrap components or scripts
-                } catch (error) {
-                    content.innerHTML = '<p class="text-danger">Sorry, the content could not be loaded.</p>';
-                    console.error('Error loading content:', error);
-                }
-            };
-
-            // Function to handle routing
-            const router = () => {
-                const hash = window.location.hash.substring(1);
-                const page = hash || 'home';
-                loadContent(page);
-            };
-
-            // Event listeners for routing
-            window.addEventListener('hashchange', router);
-            router(); // Initial load
-
-            // Theme Toggle Functionality
-            const toggleTheme = () => {
-                document.body.classList.toggle('dark-mode');
-                // Save theme preference in localStorage
-                if (document.body.classList.contains('dark-mode')) {
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    localStorage.setItem('theme', 'light');
-                }
-            };
-
-            // Event listener for theme toggle
-            themeToggle.addEventListener('click', toggleTheme);
-
-            // Load saved theme preference
-            if (localStorage.getItem('theme') === 'dark') {
-                document.body.classList.add('dark-mode');
-            }
-
-            // Smooth Scrolling for Internal Links
-            document.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
-                    e.preventDefault();
-                    const targetId = e.target.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 70, // Adjust for fixed navbar
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-    </script>
+    <!-- Font Awesome JS (Optional if using any JS-based icons) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- AOS JS for Animations -->
+    <script src="vendors/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

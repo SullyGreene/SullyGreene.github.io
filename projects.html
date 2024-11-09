@@ -3,67 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Sully Greene</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Font Awesome for Social Icons -->
+    <title>Sully Greene - About</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS for Animations -->
+    <link href="vendors/aos/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">Sully Greene</a>
+    <!-- Navigation (Same as index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-robot me-2"></i>
+                Sully Greene's Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+                <button id="theme-toggle" class="btn btn-outline-light ms-3" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
             </div>
-            <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="https://x.com/SullyGreene" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://huggingface.co/SullyGreene" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face"><i class="fab fa-hugging-face"></i></a>
-                <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://pypi.org/user/SullyGreene" target="_blank" rel="noopener noreferrer" aria-label="PyPI"><i class="fab fa-python"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
-        </nav>
-    </header>
-    <main>
-        <section class="projects">
-            <h1>My Projects</h1>
-            <p>Here are some of the key projects I've worked on recently. Click on each to learn more.</p>
-            <div class="projects-list">
-                <div class="project-card">
-                    <h2>TinyAGI</h2>
-                    <p>TinyAGI is a modular, adaptable framework designed for managing AI agents, plugins, and tools in a cohesive and scalable way. It allows dynamic loading of components and integrates easily with other tools, empowering developers to create custom applications.</p>
-                    <a href="https://pypi.org/project/TinyAGI/" target="_blank" rel="noopener noreferrer">Learn More</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container-fluid mt-5 pt-4">
+        <div class="container">
+            <!-- Projects Section -->
+            <section id="projects-section" class="mb-5" data-aos="fade-up">
+                <h1 class="mb-4 text-center">My Projects</h1>
+                <div class="row gy-4">
+                    <!-- Project Card 1 -->
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100">
+                            <img src="https://raw.githubusercontent.com/SullyGreene/TinyAGI/refs/heads/main/Static/logo.png" class="card-img-top img-fluid" alt="TinyAGI System" style="height: auto; width: 100%; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="card-title">TinyAGI System (v0.0.1)</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Developed a modular AGI-inspired agent using Python and JSON-based prompt configurations.</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Designed a dynamic plugin system to extend agent capabilities, enabling task automation and diverse tool integrations.</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Created modules for agent selection, plugin integration, and tool selection in a Streamlit UI.</li>
+                                </ul>
+                                <a href="https://pypi.org/project/TinyAGI/" target="_blank" class="btn btn-primary mt-3"><i class="fas fa-external-link-alt me-2"></i>Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100">
+                            <img src="https://raw.githubusercontent.com/SullyGreene/AlpacaX/refs/heads/main/Static/logo.png" class="card-img-top img-fluid" alt="AlpacaX Prompt Engineering" style="height: auto; width: 100%; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="card-title">AlpacaX Prompt Engineering</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Built AlpacaX, an advanced prompt-response framework for domain-specific tasks, based on the Alpaca training methodology.</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Fine-tuned language models for various industry-specific use cases, achieving a high level of performance on instruction-following tasks.</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Successfully reduced training costs and time by employing novel optimization techniques.</li>
+                                </ul>
+                                <a href="https://huggingface.co/datasets/SullyGreene/AlpacaX" target="_blank" class="btn btn-primary mt-3"><i class="fas fa-external-link-alt me-2"></i>Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more project cards similarly -->
                 </div>
-                <div class="project-card">
-                    <h2>TinyAGI-Hub Streamlit</h2>
-                    <p>TinyAGI-Hub Streamlit is a multi-page application built with Streamlit that helps manage and configure TinyAGI components. It provides a clean interface for exploring, configuring, and executing tasks involving TinyAGI’s agents, plugins, and tools.</p>
-                    <a href="https://github.com/SullyGreene/TinyAGI-Hub-Streamlit/" target="_blank" rel="noopener noreferrer">Learn More</a>
-                </div>
-                <div class="project-card">
-                    <h2>AlpacaX</h2>
-                    <p>AlpacaX is a dataset crafted to enhance AI model capabilities by providing structured, context-rich examples for training. Tailored for integration with TinyAGI, it uses an advanced Alpaca-style training methodology for detailed instruction-following and multi-step reasoning.</p>
-                    <a href="https://github.com/SullyGreene/TinyAGI-Hub-Streamlit/" target="_blank" rel="noopener noreferrer">Learn More</a>
-                </div>
-                <div class="project-card">
-                    <h2>Custom AI Datasets</h2>
-                    <p>I've developed and reformatted custom AI datasets, particularly Alpaca-style datasets, to fit my unique use cases. These datasets are available on Hugging Face and support diverse AI development initiatives.</p>
-                    <a href="https://huggingface.co/SullyGreene" target="_blank" rel="noopener noreferrer">Learn More</a>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Sully Greene. All rights reserved.</p>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <a href="https://github.com/SullyGreene" target="_blank" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://linkedin.com/in/SullyGreene" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2024 Sully Greene. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- AOS JS for Animations -->
+    <script src="vendors/aos/aos.js"></script>
+    <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
 </html>
