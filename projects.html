@@ -46,18 +46,53 @@
 
   <div class="row g-4">
 
-    <!-- MyPager -->
+    <!-- MyPager Card -->
     <div class="col-md-6" data-aos="fade-up">
-      <div class="card bg-light text-dark h-100 shadow">
+      <div class="card bg-light text-dark h-100 shadow position-relative">
         <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-terminal me-2"></i>📟 MyPager</h3>
-          <p class="card-text">A fun and functional Python CLI to run and install scripts. Interactive, customizable, and built for devs who love terminal tools.</p>
-          <a href="https://github.com/SullyGreene/MyPager" class="btn btn-outline-dark btn-sm" target="_blank">
-            <i class="fab fa-github me-1"></i>View on GitHub
-          </a>
+          <h3 class="card-title"><i class="fas fa-terminal me-2"></i>📟 MyPager <span class="badge bg-secondary">#CLI</span></h3>
+          <p class="card-text">A fun and functional Python CLI to run and install scripts. Built for devs who love terminal tools.</p>
+          <div class="d-flex justify-content-between">
+            <a href="https://github.com/SullyGreene/MyPager" class="btn btn-outline-dark btn-sm" target="_blank">
+              <i class="fab fa-github me-1"></i>GitHub
+            </a>
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalMyPager">
+              <i class="fas fa-book-open me-1"></i>Details
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    
+    <!-- Modal: MyPager -->
+    <div class="modal fade" id="modalMyPager" tabindex="-1" aria-labelledby="modalMyPagerLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content bg-light text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalMyPagerLabel">📟 MyPager — CLI Toolkit</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>MyPager</strong> is a Python command-line tool designed to simplify script management. Whether you're running automation or installing quick helpers, MyPager’s got you! 💻🚀</p>
+            <ul>
+              <li>🛠️ Easy script execution with run/install commands</li>
+              <li>💻 Interactive menu mode for browsing and managing tools</li>
+              <li>🎨 Easily extendable to your workflow</li>
+            </ul>
+            <pre><code>python MyPager.py run my_script</code></pre>
+            <p>Clone & start:</p>
+            <pre><code>git clone https://github.com/SullyGreene/MyPager.git
+    cd MyPager
+    python MyPager.py</code></pre>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/SullyGreene/MyPager" class="btn btn-dark" target="_blank">🔗 View on GitHub</a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- TinyAGI -->
     <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
