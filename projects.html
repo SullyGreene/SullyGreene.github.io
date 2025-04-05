@@ -3,28 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🛠️ Sully Greene — Projects</title>
+  <title>📜 Arcane Archives — Sully Greene's Projects</title>
 
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <!-- 🧙 Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-  <!-- AOS Animations -->
+  <!-- 🌠 AOS Animations -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
 
-  <!-- Bootstrap -->
+  <!-- ⚡ Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- 🌌 Custom Enchantment -->
+  <style>
+    body {
+      font-family: 'Cinzel Decorative', cursive;
+      background-color: #0b0c2a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .navbar-brand {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cinzel Decorative', cursive;
+      color: #bb86fc;
+    }
+
+    .card {
+      border: 2px solid #bb86fc;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
+      border-radius: 15px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(45deg, #bb86fc, #03dac6);
+      border: none;
+    }
+
+    .btn-outline-dark {
+      border-color: #bb86fc;
+      color: #bb86fc;
+    }
+
+    .btn-outline-dark:hover {
+      background-color: #bb86fc;
+      color: #000;
+    }
+
+    .badge {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    footer {
+      background-color: #111;
+      color: #bb86fc;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .modal-content {
+      border-radius: 15px;
+      border: 2px solid #03dac6;
+    }
+
+    pre {
+      background: #1e1e2f;
+      color: #00ff99;
+      padding: 15px;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+
+    .glow {
+      text-shadow: 0 0 10px #bb86fc, 0 0 20px #03dac6;
+    }
+
+    .section-title {
+      margin-top: 120px;
+    }
+  </style>
 </head>
 <body class="bg-dark text-white">
 
-<!-- Navigation -->
+<!-- 🧭 Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <i class="fas fa-rocket me-2"></i>Sully Greene
+      <i class="fas fa-hat-wizard me-2"></i> Sully Greene
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
       <span class="navbar-toggler-icon"></span>
@@ -40,259 +110,30 @@
   </div>
 </nav>
 
-<!-- Main Content -->
-<main class="container mt-5 pt-5">
-  <h1 class="text-center mb-5" data-aos="fade-up"><i class="fas fa-laptop-code me-2"></i>My Projects</h1>
+<!-- 🔮 Header -->
+<header class="container text-center section-title">
+  <h1 class="glow" data-aos="fade-up">📜 The Arcane Archives</h1>
+  <p class="lead" data-aos="fade-up" data-aos-delay="100">Explore the enchanted tools, datasets, and assistants crafted in the Academy of AI Wonders. ✨</p>
+</header>
 
+<!-- 🔍 Project Grid -->
+<main class="container mt-5 pt-3">
   <div class="row g-4">
 
-    <!-- Project Cards Go Here -->
-    <!-- For brevity, I'm dropping the MyPager Card + Modal only. You get the idea! Let me know and I’ll send the rest -->
-
-    <!-- MyPager Card -->
-    <div class="col-md-6" data-aos="fade-up">
-      <div class="card bg-light text-dark h-100 shadow position-relative">
-        <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-terminal me-2"></i>📟 MyPager <span class="badge bg-secondary">#CLI</span></h3>
-          <p class="card-text">A fun and functional Python CLI to run and install scripts. Built for devs who love terminal tools.</p>
-          <div class="d-flex justify-content-between">
-            <a href="https://github.com/SullyGreene/MyPager" class="btn btn-outline-dark btn-sm" target="_blank">
-              <i class="fab fa-github me-1"></i>GitHub
-            </a>
-            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalMyPager">
-              <i class="fas fa-book-open me-1"></i>Details
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal: MyPager -->
-    <div class="modal fade" id="modalMyPager" tabindex="-1" aria-labelledby="modalMyPagerLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-scrollable">
-        <div class="modal-content bg-light text-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalMyPagerLabel">📟 MyPager — CLI Toolkit</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p><strong>MyPager</strong> is a Python command-line tool designed to simplify script management. Whether you're running automation or installing quick helpers, MyPager’s got you! 💻🚀</p>
-            <ul>
-              <li>🛠️ Easy script execution with run/install commands</li>
-              <li>💻 Interactive menu mode for browsing and managing tools</li>
-              <li>🎨 Easily extendable to your workflow</li>
-            </ul>
-            <pre><code>python MyPager.py run my_script</code></pre>
-            <p>Clone & start:</p>
-            <pre><code>git clone https://github.com/SullyGreene/MyPager.git
-cd MyPager
-python MyPager.py</code></pre>
-          </div>
-          <div class="modal-footer">
-            <a href="https://github.com/SullyGreene/MyPager" class="btn btn-dark" target="_blank">🔗 View on GitHub</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Add more cards + modals here for TinyAGI, SAPPHIRE, AlpacaX -->
-    <!-- TinyAGI Card -->
-    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-      <div class="card bg-light text-dark h-100 shadow">
-        <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-brain me-2"></i>🧠 TinyAGI <span class="badge bg-info">#Framework</span></h3>
-          <p class="card-text">A modular AGI framework for managing AI agents, plugins, and dynamic tools. Built for researchers and devs pushing AI limits.</p>
-          <div class="d-flex justify-content-between">
-            <a href="https://github.com/SullyGreene/TinyAGI" class="btn btn-outline-dark btn-sm" target="_blank">
-              <i class="fab fa-github me-1"></i>GitHub
-            </a>
-            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalTinyAGI">
-              <i class="fas fa-book-open me-1"></i>Details
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Modal: TinyAGI -->
-    <div class="modal fade" id="modalTinyAGI" tabindex="-1" aria-labelledby="modalTinyAGILabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-scrollable">
-        <div class="modal-content bg-light text-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalTinyAGILabel">🧠 TinyAGI — Modular AGI Framework</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p><strong>TinyAGI</strong> is a plug-and-play AGI framework that empowers AI researchers and builders to manage agents, plugins, and automation tools like a boss. 🧠⚙️</p>
-            <ul>
-              <li>🌐 Agent management with OpenAI, Ollama, LLaMA</li>
-              <li>🔌 Plugin system for tool expansions</li>
-              <li>🛠 Real-world task automation & orchestration</li>
-            </ul>
-            <pre><code>pip install TinyAGI</code></pre>
-            <pre><code>python -m TinyAGI.services.cli_manager generate --prompt "Tell me a joke."</code></pre>
-          </div>
-          <div class="modal-footer">
-            <a href="https://github.com/SullyGreene/TinyAGI" class="btn btn-dark" target="_blank">🔗 View on GitHub</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- S.A.P.P.H.I.R.E. Card -->
-    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-      <div class="card bg-light text-dark h-100 shadow">
-        <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-gem me-2"></i>💎 S.A.P.P.H.I.R.E. <span class="badge bg-warning text-dark">#Assistant</span></h3>
-          <p class="card-text">Inspired by J.A.R.V.I.S. and Cortana, S.A.P.P.H.I.R.E. delivers a responsive, empathetic, and intelligent digital companion.</p>
-          <div class="d-flex justify-content-between">
-            <a href="https://github.com/SullyGreene/S.A.P.P.H.I.R.E" class="btn btn-outline-dark btn-sm" target="_blank">
-              <i class="fab fa-github me-1"></i>GitHub
-            </a>
-            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalSapphire">
-              <i class="fas fa-book-open me-1"></i>Details
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Modal: S.A.P.P.H.I.R.E. -->
-    <div class="modal fade" id="modalSapphire" tabindex="-1" aria-labelledby="modalSapphireLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-scrollable">
-        <div class="modal-content bg-light text-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalSapphireLabel">💎 S.A.P.P.H.I.R.E. — Next-Gen Digital Assistant</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p><strong>S.A.P.P.H.I.R.E.</strong> (Sophisticated Artificially Powered Personal Helper with High Intelligence, Responsiveness, and Empathy) is a legendary assistant project born from the DNA of J.A.R.V.I.S. and Cortana. 🌌🧠</p>
-            <ul>
-              <li>🤖 Conversational Intelligence</li>
-              <li>💡 Problem-solving & empathetic interaction</li>
-              <li>🌐 Ready for integration with future ecosystems</li>
-            </ul>
-            <pre><code>git clone https://github.com/SullyGreene/S.A.P.P.H.I.R.E.git
-    cd S.A.P.P.H.I.R.E
-    python sapphire.py</code></pre>
-          </div>
-          <div class="modal-footer">
-            <a href="https://github.com/SullyGreene/S.A.P.P.H.I.R.E" class="btn btn-dark" target="_blank">🔗 View on GitHub</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- AlpacaX Card -->
-    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="card bg-light text-dark h-100 shadow">
-        <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-layer-group me-2"></i>🦙 AlpacaX <span class="badge bg-success">#Dataset</span></h3>
-          <p class="card-text">A structured prompt-response dataset for fine-tuning multi-step reasoning in AI agents. Built for TinyAGI integrations.</p>
-          <div class="d-flex justify-content-between">
-            <a href="https://github.com/SullyGreene/AlpacaX" class="btn btn-outline-dark btn-sm" target="_blank">
-              <i class="fab fa-github me-1"></i>GitHub
-            </a>
-            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAlpacaX">
-              <i class="fas fa-book-open me-1"></i>Details
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Modal: AlpacaX -->
-    <div class="modal fade" id="modalAlpacaX" tabindex="-1" aria-labelledby="modalAlpacaXLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-scrollable">
-        <div class="modal-content bg-light text-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalAlpacaXLabel">🦙 AlpacaX — Contextual Dataset</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p><strong>AlpacaX</strong> enhances TinyAGI by providing structured training samples for high-context, logic-driven responses. It's format-ready for multi-step thinking. 🧩</p>
-            <ul>
-              <li>📦 System, Request, Response structure</li>
-              <li>🧠 Improves reasoning & task step-following</li>
-              <li>💼 Apache 2.0 Licensed</li>
-            </ul>
-            <pre><code>{
-      "system": "<prompt>Guide tone and depth</prompt>",
-      "request": "<instruction>Ask a question</instruction>",
-      "response": "<output>Give a structured reply</output>"
-    }</code></pre>
-          </div>
-          <div class="modal-footer">
-            <a href="https://github.com/SullyGreene/AlpacaX" class="btn btn-dark" target="_blank">🔗 View on GitHub</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- GPT-X Card -->
-    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-      <div class="card bg-light text-dark h-100 shadow">
-        <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-space-shuttle me-2"></i>🛸 GPT-X Starship <span class="badge bg-primary">#Interface</span></h3>
-          <p class="card-text">Sci-fi themed Streamlit interface for training, customizing, and exploring GPT-based AI models. Embark on your text-gen adventure!</p>
-          <div class="d-flex justify-content-between">
-            <a href="https://github.com/SullyGreene/GPT-X" class="btn btn-outline-dark btn-sm" target="_blank">
-              <i class="fab fa-github me-1"></i>GitHub
-            </a>
-            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalGptX">
-              <i class="fas fa-book-open me-1"></i>Details
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal: GPT-X -->
-    <div class="modal fade" id="modalGptX" tabindex="-1" aria-labelledby="modalGptXLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-scrollable">
-        <div class="modal-content bg-light text-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalGptXLabel">🛸 GPT-X Starship Interface</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p><strong>GPT-X</strong> is a galactic UI for customizing and managing GPT models through a sci-fi styled interface. 🌠</p>
-            <ul>
-              <li>🎛 Model Parameter Customization</li>
-              <li>📡 Dynamic Model Interaction Console</li>
-              <li>💾 Load & manage multiple AI "entities"</li>
-            </ul>
-            <p>Launch locally with:</p>
-            <pre><code>git clone https://github.com/SullyGreene/GPT-X.git
-    cd GPT-X
-    pip install -r requirements.txt
-    streamlit run app.py</code></pre>
-          </div>
-          <div class="modal-footer">
-            <a href="https://github.com/SullyGreene/GPT-X" class="btn btn-dark" target="_blank">🔗 View on GitHub</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
+    <!-- 🧠 Dynamic Project Cards & Modals will go here -->
+    <!-- Already created cards from previous step will be injected here -->
 
   </div>
 </main>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-4 mt-5">
+<!-- 🛡️ Footer -->
+<footer class="text-center py-4 mt-5">
   <div class="container">
-    <p>&copy; 2024 Sully Greene. All rights reserved.</p>
+    <p>✨ &copy; 2025 Sully Greene — Headmaster of the AI Wizards Academy. All spells protected. 🔮</p>
   </div>
 </footer>
 
-<!-- Scripts -->
+<!-- ⚙️ Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
