@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎓 Enroll in the AI Wizards Academy</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      background: #0c0c2c;
+      color: #ffffff;
+      font-family: 'Cinzel Decorative', cursive;
+    }
+
+    h1, h2 {
+      color: #bb86fc;
+    }
+
+    .hero {
+      padding-top: 120px;
+      text-align: center;
+    }
+
+    .btn-enroll {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.3rem;
+      padding: 12px 30px;
+      margin-top: 20px;
+      background: linear-gradient(45deg, #03dac6, #bb86fc);
+      border: none;
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-enroll:hover {
+      background: linear-gradient(45deg, #ff80ab, #00c3ff);
+      box-shadow: 0 0 15px #ffffff;
+    }
+
+    pre {
+      background: #1e1e2f;
+      color: #00ff99;
+      padding: 20px;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+
+    .scroll {
+      font-size: 1rem;
+      background-color: #111132;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px #bb86fc;
+    }
+
+    footer {
+      font-family: 'Orbitron', sans-serif;
+      color: #bb86fc;
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="fas fa-hat-wizard me-2"></i>Sully Greene</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="enroll.html">Enroll</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="container hero" data-aos="fade-up">
+  <h1>🎓 Enroll in the Academy of AI Wizards</h1>
+  <p class="lead mt-3">Your magical journey starts here. Claim your spellbook and create your own Wizard Card!</p>
+  <a href="https://github.com/SullyGreene/SullyGreene.github.io/fork" class="btn-enroll" target="_blank">✨ Fork Now</a>
+</section>
+
+<!-- Guide Section -->
+<section class="container my-5 scroll" data-aos="fade-up" data-aos-delay="100">
+  <h2 class="mb-4">🪄 How to Join the Academy</h2>
+  <ol>
+    <li>Click the <strong>“✨ Fork Now”</strong> button above to copy this magical repository into your GitHub account.</li>
+    <li>Clone your forked version locally with:</li>
+    <pre><code>git clone https://github.com/YOUR_USERNAME/SullyGreene.github.io.git</code></pre>
+    <li>Edit the <code>index.html</code> and <code>README.md</code> to customize your own Wizard Card 🧙‍♀️</li>
+    <li>Push your changes and host via GitHub Pages: <code>Settings ➡️ Pages ➡️ main branch</code></li>
+    <li>✨ Share your wizard identity with the world!</li>
+  </ol>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+  <p>&copy; 2025 Sully Greene — Headmaster of the AI Wizards Academy 🧙‍♂️🔮</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
