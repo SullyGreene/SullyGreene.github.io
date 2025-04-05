@@ -3,28 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🧙‍♂️ Sully Greene — Dev Portfolio</title>
-  
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <title>🧙‍♂️ Sully Greene — Headmaster of The AI Wizards Academy</title>
+
+  <!-- 🔮 Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Cinzel+Decorative:wght@700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- AOS Animation -->
+  <!-- 🌠 AOS Animation -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 
-  <!-- Bootstrap -->
+  <!-- 🧪 Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- 🧙‍♂️ Custom Styles -->
+  <style>
+    body {
+      font-family: 'Cinzel Decorative', cursive;
+      background-color: #0d0d2b;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .navbar-brand {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+    }
+
+    .hero-section {
+      background: url('assets/images/academy-bg.jpg') center/cover no-repeat;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .social-icons img {
+      margin: 0 10px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.15);
+      filter: drop-shadow(0 0 10px #ffffffaa);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #bb86fc, #03dac6);
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #ff80ab, #00c3ff);
+      box-shadow: 0 0 20px #ffffff88;
+    }
+
+    footer {
+      background-color: #111;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .rounded-circle {
+      border: 3px solid #03dac6;
+      box-shadow: 0 0 20px #bb86fc;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cinzel Decorative', cursive;
+    }
+  </style>
 </head>
 <body class="bg-dark text-white">
 
-  <!-- Navigation -->
+  <!-- 🔗 Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <i class="fas fa-robot me-2"></i> Sully Greene
+        <i class="fas fa-hat-wizard me-2"></i> Sully Greene
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -42,16 +98,16 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section d-flex align-items-center text-center text-white" style="min-height: 100vh; background: url('assets/images/hero-bg.jpg') center/cover no-repeat;">
+  <!-- ✨ Hero Section -->
+  <section class="hero-section text-white">
     <div class="container" data-aos="fade-up">
       <img src="assets/images/profile-picture.jpg" alt="Sully Greene" class="rounded-circle mb-4" style="width: 250px; height: 250px; object-fit: cover;">
-      <h1 class="display-4">👋 Hello, I'm Sully</h1>
-      <p class="lead">Crafting ✨ beautiful, functional web & AI magic.</p>
+      <h1 class="display-4">🧙‍♂️ Welcome to The AI Wizards Academy</h1>
+      <p class="lead">I’m Sully Greene — 🎓 Headmaster, Creator of <strong>AlpacaX</strong>, and your guide to all things magical in AI, Python & Code Crafting.</p>
 
-      <!-- Social Icons -->
+      <!-- 🌍 Social Icons -->
       <div class="social-icons my-4">
-        <a href="https://x.com/SullyGreene" target="_blank" aria-label="X.com">
+        <a href="https://x.com/SullyGreene" target="_blank">
           <img src="https://img.shields.io/twitter/follow/SullyGreene?style=social" alt="Follow Sully on X">
         </a>
         <a href="https://huggingface.co/SullyGreene" target="_blank">
@@ -72,23 +128,23 @@
       </div>
 
       <a href="projects.html" class="btn btn-primary btn-lg">
-        <i class="fas fa-rocket me-2"></i>View Projects
+        <i class="fas fa-scroll me-2"></i>Enter the Spellbook
       </a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
+  <!-- 🪄 Footer -->
+  <footer class="text-white text-center py-4">
     <div class="container">
       <div class="mb-3">
         <a href="https://github.com/SullyGreene" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
         <a href="https://linkedin.com/in/SullyGreene" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
       </div>
-      <p class="mb-0">&copy; 2024 Sully Greene. All rights reserved.</p>
+      <p class="mb-0">✨ &copy; 2025 Sully Greene. All rights reserved across all realms. ✨</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- ⚡ Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
