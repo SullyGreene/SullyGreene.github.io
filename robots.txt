@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sullygreene.github.io/sitemap.xml
