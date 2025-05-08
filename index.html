@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sully Greene – Prompt Engineer | Fullstack Dev | AGI Architect</title>
 
   <!-- ✅ SEO Meta -->
@@ -12,7 +12,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://sullygreene.github.io/">
 
-  <!-- 📘 Open Graph / Facebook -->
+  <!-- 📘 Open Graph -->
   <meta property="og:title" content="Sully Greene – AGI Developer & Prompt Engineer">
   <meta property="og:description" content="Explore the work and world of Sully Greene, a visionary in prompt engineering, fullstack systems, and artificial general intelligence.">
   <meta property="og:image" content="https://sullygreene.github.io/assets/images/og-image.jpg">
@@ -28,104 +28,118 @@
   <!-- 🌐 Favicon -->
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-  <!-- 🔮 Fonts & Icons -->
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Cinzel+Decorative:wght@700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- 🌠 AOS Animation -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
-
-  <!-- 🧪 Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- 🧙‍♂️ Custom Styles -->
-  <!-- 🧙‍♂️ Custom Styles -->
-<style>
-  body {
-    font-family: 'Cinzel Decorative', cursive;
-    background-color: #0d0d2b;
-    color: #ffffff;
-    overflow-x: hidden;
-    padding-bottom: 3rem;
-    position: relative;
-  }
+  <!-- 🔮 Cosmic Upgrade Styles -->
+  <style>
+    body {
+      background-color: #0d0d2b;
+      color: #ffffff;
+      font-family: 'Cinzel Decorative', cursive;
+      position: relative;
+      overflow-x: hidden;
+      padding-bottom: 3rem;
+      background-image: radial-gradient(circle at top left, rgba(3,218,198,0.15), transparent),
+                        radial-gradient(circle at bottom right, rgba(187,134,252,0.1), transparent);
+    }
 
-  /* ✨ Floating glow background */
-  body::before {
-    content: '';
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    top: -200px;
-    left: -200px;
-    background: radial-gradient(circle, rgba(187,134,252,0.15), transparent 70%);
-    filter: blur(80px);
-    z-index: 0;
-  }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: 0;
+    }
 
-  .hero-section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 2rem;
-    background: radial-gradient(ellipse at top, #1a1a40 0%, #0d0d2b 100%);
-    position: relative;
-    z-index: 1;
-  }
+    .hero-section {
+      background: linear-gradient(120deg, #1a1a40 0%, #0d0d2b 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      padding-top: 2rem;
+    }
 
-  /* 🔮 Floating effect */
-  .rounded-circle {
-    border: 3px solid #03dac6;
-    box-shadow: 0 0 25px #bb86fc;
-    animation: float 6s ease-in-out infinite;
-  }
+    h1 {
+      font-size: 2.75rem;
+      animation: glowPulse 4s ease-in-out infinite;
+      text-shadow: 0 0 16px #03dac6, 0 0 32px #bb86fc;
+    }
 
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
-  }
+    @keyframes glowPulse {
+      0%, 100% { text-shadow: 0 0 12px #03dac6, 0 0 22px #bb86fc; }
+      50% { text-shadow: 0 0 32px #ff80ab, 0 0 42px #00c3ff; }
+    }
 
-  h1 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 2.5rem;
-    text-shadow: 0 0 12px #bb86fc, 0 0 20px #03dac6;
-  }
+    .rounded-circle {
+      border: 4px solid #03dac6;
+      box-shadow: 0 0 25px #bb86fc;
+      animation: float 5s ease-in-out infinite;
+    }
 
-  .btn-custom {
-    background: linear-gradient(135deg, #bb86fc, #03dac6);
-    border: 2px solid transparent;
-    border-image: linear-gradient(45deg, #03dac6, #bb86fc);
-    border-image-slice: 1;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.5rem;
-    transition: all 0.4s ease;
-    box-shadow: 0 0 8px #222;
-  }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-14px); }
+    }
 
-  .btn-custom:hover {
-    background: linear-gradient(135deg, #ff80ab, #00c3ff);
-    box-shadow: 0 0 30px #ffffffaa;
-    transform: scale(1.05);
-  }
+    .btn-custom {
+      background: linear-gradient(135deg, #bb86fc, #03dac6);
+      border: 2px solid transparent;
+      border-radius: 50px;
+      padding: 0.75rem 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 12px #222;
+    }
 
-  footer {
-    background-color: #111;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    color: #ccc;
-    padding: 1rem 0;
-  }
+    .btn-custom::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%; width: 0%;
+      background: rgba(255,255,255,0.1);
+      transition: width 0.4s ease;
+      z-index: 0;
+    }
 
-  h2, h3 {
-    font-family: 'Cinzel Decorative', cursive;
-  }
-</style>
+    .btn-custom:hover::before {
+      width: 100%;
+    }
 
+    .btn-custom:hover {
+      background: linear-gradient(135deg, #ff80ab, #00c3ff);
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #ffffff88;
+    }
+
+    .modal-content {
+      background: linear-gradient(to bottom, #1c1c3a, #0d0d2b);
+      border: 1px solid #444;
+      box-shadow: 0 0 20px #bb86fc55;
+    }
+
+    footer {
+      background-color: #111;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      color: #aaa;
+      padding: 1.5rem 0;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
 </head>
 <body>
 
@@ -158,12 +172,12 @@
   </footer>
 
   <!-- 🧭 Contact Modal -->
-  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal fade" id="contactModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content bg-dark text-white border border-secondary">
+      <div class="modal-content text-white">
         <div class="modal-header border-0">
-          <h5 class="modal-title" id="contactModalLabel">Contact Sully</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title">Contact Sully</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body text-center">
           <a href="https://instagram.com/sullygreene" target="_blank" class="btn btn-outline-light m-2"><i class="fab fa-instagram me-2"></i>Instagram</a>
@@ -176,12 +190,12 @@
   </div>
 
   <!-- 💻 Projects Modal -->
-  <div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+  <div class="modal fade" id="projectsModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content bg-dark text-white border border-secondary">
+      <div class="modal-content text-white">
         <div class="modal-header border-0">
-          <h5 class="modal-title" id="projectsModalLabel">Featured Projects</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title">Featured Projects</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <ul class="list-group list-group-flush">
@@ -195,12 +209,12 @@
   </div>
 
   <!-- 🔄 Share Modal -->
-  <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+  <div class="modal fade" id="shareModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content bg-dark text-white border border-secondary">
+      <div class="modal-content text-white">
         <div class="modal-header border-0">
-          <h5 class="modal-title" id="shareModalLabel">Share This Page</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title">Share This Page</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body text-center">
           <a href="https://twitter.com/intent/tweet?text=Check+out+Sully+Greene:+https://sullygreene.github.io" target="_blank" class="btn btn-outline-light m-2"><i class="fab fa-twitter me-2"></i>Twitter</a>
@@ -214,10 +228,7 @@
   <!-- 📜 Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 
 </body>
-
 </html>
